@@ -1,0 +1,124 @@
+
+                CLASE 2 --> OPENBOOTCAMP
+
+La Idea es que los componentes reaccionen, que sean dinamicos
+Son aucontenidos y pueden tener relacion con otros
+
+Vamos a crear componentes
+
+Adentro la carpera Pure, componentes que no van a ser tan complejos, sencillos
+
+Extensiones para trabajar con JSX
+
+// Debugger for chrome. DEPRECADA- NO SE PUDO INSTALAR
+
+1) Babel eslintConfig
+2) Better Comments 
+3) Bootstrap 4
+4) Bracket Pair Colorizer / DEPRECADO - YA VIENE POR DEFAULT EN VISUAL, YA ESTA EN true
+5) New CodeStream - para manejar el repo en GitHub, GitLab, etc.
+6) ColorHighLight Ayuda con los estilofa-spin
+7) ES7 React/Redux/GraphQL/React-Native snippets
+Extensions for React, React-Native and Redux in JS/TS with ES7+ syntax. Customizable. Built-in integration with prettier.
+
+Nos va a traer muchos snippets necesarios para automatizar la creación de los componentes
+
+Snippet es un término de programación para una pequeña región de código fuente reutilizable, 
+código de máquina o texto. Por lo general, estas son unidades operativas formalmente definidas 
+para incorporar en módulos de programación más grandes.
+
+8) JS JSX Snippets
+9) Material Icno Theme -- instalado
+10) npm intellisense -- instalado
+11) Path intellisense -- instalado
+12) Version Lens -- versiones
+13) Live share -- codear en tiempo real con otras personas
+
+Ahora empezamos 
+
+Creamos un componente de clase - rcc 
+
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+
+class Greating extends Component { // realmente es una extension de la clase Component 
+    render() {
+        return (
+            <div>
+                
+            </div>
+        );
+    }
+}
+
+
+Greating.propTypes = {
+
+};
+ // estas son las props que le puedo pasar a un componente de orden superior
+
+export default Greating;
+
+
+--> En React solo existe un componente Padre 
+
+Ahora, los componentes de clase tienen su constructor como en la programación en geneal.
+
+    birthDay () {
+        this.setState((prevState) => (
+            {
+                age: prevState.age+1
+            }
+        ))
+    }
+
+    se define con funcion flecha para que los elementos hagan referencia a this, de lo contrario no lo haran, 
+    por ejemplo, queremos hacer referencia a this.setState. que se trata del estado del constructor
+
+Ahora Vamos por la Sesion 3 - Configuración de carpetas para el proyecto final 
+
+contanier -- componentes de orden superior
+
+Los componentes de tipo contendor van a tener la lógica y los datos 
+
+En src creamos la carpeta hooks, para los que son generados por nosotros mismos por ejemplo.
+
+Creamos la carpeta routes --> las rutas de nuestro proyecto
+Establecer que ruta va con que componente
+
+Creamos la carpeta pages --> contener archivos jsx o componentes que rendericen una pagina a la que podamos ir 
+
+Ahora, en pure creamos una carpeta form, para los formularios, de loggin, de los registros.
+
+En pages creamos la carpeta 
+
+    --> Home 
+    --> auth  --> manejo de autenticacion y loggin, cambio de contraeña, etc.. 
+    --> 404 para rutas no adecuadas
+
+
+creamos una carpeta models  --> para especificar los tipos de datos que vamos a trabajar
+
+En models creamos una clase --> task.class.js y un levels.enum.js (un enum para los levels de la calse task)
+
+task es una clase de donde vienen nuestros datos, los datos de cada tarea. 
+
+En container creamos un task_list.jsx
+
+En los componentes puros creamos uno llamado task.jsx
+
+RENDERIZACIÓN 
+1 NIVEL         2 NIVEL         3 NIVEL
+ APP        ---> task_list      --> task 
+
+
+TECNICAS PARA EMPEZAR 
+
+--> 1 EMPEZAR POR LOS NIVELES ALTOS, Y CUANDO CIERTAS TAREAS SE REPITAN, SACAR UN COMPONENTE DEL MISMO 
+--> 2 EMPEZAR DESDE ABAJO - DISEÑO MODULAR - DESDE LOS BLOQUES PEQUEÑOS, HACIA LOS DE ABAJO
+
+
+
+
+
