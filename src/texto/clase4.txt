@@ -1,2 +1,9 @@
+
+Repo del Curso
+https://gitlab.com/masajo/ob-react/-/commits/main/
+
 Los Hooks de React 
+
+Son funciones que simplifican distintos mecanismos para trabajar con componentes funcionales 
+
 
