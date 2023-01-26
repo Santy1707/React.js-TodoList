@@ -12,6 +12,7 @@ import GreetingStyled from './components/pure/greetingStyled';
 import LifeCycleTarea from './hooks/lifecycle/lifeCycleTarea';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import Father from './components/container/father';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           {/** Componente propio -- Greeting.jsx */}
           {/* <Greating name="Santiago"></Greating> */}
           {/* <GreetingF name="Santiago"></GreetingF> */}
-          <TaskListComponent></TaskListComponent>
+          {/* <TaskListComponent></TaskListComponent> */}
           {/* <ContactList></ContactList> */}
           {/* <Ejemplo1></Ejemplo1> */}
           {/* <Ejemplo2></Ejemplo2> */}
@@ -34,7 +35,10 @@ function App() {
           {/* </Ejemplo4> */}
           {/* <GreetingStyled name={'Santiago'}></GreetingStyled> */}
           {/* <LifeCycleTarea></LifeCycleTarea> */}
-      {/* </header> */}
+
+          {/* Gestión de eventos  */}
+          <Father></Father>
+           {/* </header> */}
     </div>
   );
 }
